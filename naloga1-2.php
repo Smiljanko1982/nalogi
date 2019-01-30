@@ -7,14 +7,11 @@ include('db_connection.php');
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta Nalogi 1 in 2
-    </title>
-  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <style>
+    <title>Nalogi 1 in 2 </title>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
         .container {
             background-color: grey;
         }
@@ -36,7 +33,7 @@ include('db_connection.php');
 
 
     <h1 id="address1">Forma X</h1>
-    <div class="col-lg-2 offset-lg-5">
+    <div class="col-lg-3 offset-lg-5">
         <?php
         include('formaX.php');
 
@@ -78,18 +75,8 @@ include('db_connection.php');
 </div>
 </body>
 </html>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script src="js/bootstrap.min.js"></script>-->
+
 <script src="js/javascript.js"></script>
 <script src="js/my-javascript.js"></script>
-<script type="text/javascript">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-// opravi se GET metoda, ki naredi klic v bazo, s tem pridobimo podatek(id) in ga  shranimo v padajoči seznam
-
-
-</script>
+<script src="js/bootstrap.min.js"></script>

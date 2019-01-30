@@ -9,9 +9,9 @@ if (isset($_GET['id'])) {
     $result = mysqli_query($conn, $sql);
     while ($row = mysqli_fetch_assoc($result)) {
         $id = $row['id'];
-        $vrednosti = $row['vrednosti'];
+        $vnosi = $row['vnosi'];
 
-        echo $vrednosti;
+        echo $vnosi;
 
 
     }
