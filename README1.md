@@ -12,8 +12,11 @@ Naloga 2
 Ustvarjene datoteke:
 
 naloga1-2.php…………HTML obrazec, forma,  SQL poizvedba za polnjenje padajočega seznama ,osnovni css,….
+
 db_connection.php……. povezava z bazo, ki je vključena v večino datotek php.
+
 nalozi_podatke.php…….SQL poizvedba v bazo, kjer izberem vnos na podlagi izbranega id-ja iz seznama.
+
 posodobi.php…………… SQL poizvedba v bazo, kjer na podlagi poslanih podatkov POST metode, posodobim vnosi v bazi, na podlagi izbranega id-ja iz seznama. 
 
 
