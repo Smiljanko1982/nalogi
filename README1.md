@@ -1,25 +1,30 @@
-# nalogi
 Rešitve naloge 1 in 2
 
 Naloga 1
 
-Za rešitev naloge sem uporabil v funkciji formaX 2 for zanki, kjer sem postavil pogoj da se izriše na ekran * ko sta vrednosti i in j enaki ali ko je vsota obeh enaka 12.
+Za rešitev naloge sem uporabil v funkciji formaX 2 for zanki, kjer sem postavil pogoj, da se izriše na ekran *, ko sta vrednosti i in j enaki ali ko je vsota obeh enaka 12.
 V ostalih primerih pa se izriše na ekran _ .
 Rešitev naloge 1 se nahaja v datoteki formaX.php in klic funkcije v datoteki naloga1-2.php.
 
 Naloga 2
 
+
+Ustvarjene datoteke:
+
+naloga1-2.php…………HTML obrazec, forma,  SQL poizvedba za polnjenje padajočega seznama ,osnovni css,….
+db_connection.php……. povezava z bazo, ki je vključena v večino datotek php.
+nalozi_podatke.php…….SQL poizvedba v bazo, kjer izberem vnos na podlagi izbranega id-ja iz seznama.
+posodobi.php…………… SQL poizvedba v bazo, kjer na podlagi poslanih podatkov POST metode, posodobim vnosi v bazi, na podlagi izbranega id-ja iz seznama. 
+
+
+
 V datoteki db_connection.php se izvede povezava z bazo.
-Najprej smo v bazi ajax ustvaril tabelo uporabniki s stolpcema id(ključ) in vnosi.  V nadaljevanju izberemo iz baze vse podatke 
-stolpca id v tabeli uporabniki in jih s pomočjo while zanke zapišemo v padajoči seznam . V nadaljevanju želimo pridobiti 
-na podlagi izbranega id-ja iz seznama,  vrednost iz stolpca  vnosi. To naredimo s funckijo onSelect, kjer pošljemo GET zahtevo 
-z URL-jem na datoteko nalozi_podatke.php. V datoteki nalozi_podatke.php preverimo če je nastavljen id (izbrani id iz seznama ), 
-ga shranimo v spremenljivko v obliki niza in opravimo SQL poizvedbo, kjer poiščemo vrednost vnosi po izbranem id-ju in shranimo 
-vrednost v novo spremenljivko. V nadaljevanju pridobljeno vrednost niza dodamo v HTML element input, kjer bomo lahko v
-nadaljevanju vrednosti vnosa spreminjali.Nato spremembo  vrednosti  vnosa v input HTML znački želimo shraniti v bazo,
-kar naredimo z jQuery event handler-jem click s funkcijo kjer pridobimo ustrezne vrednosti in naredimo POST metodo preko 
-Ajax klica. V Ajax klicu navedemo kot URL datoteko posodobi.php, tip metode in podatke ki jih bomo pošiljali. V datoteki 
-posodobi.php preverimo, če je nastavljena vrednost id, ter v nadaljevanju shranimo vrednosti id in vnosi pridobljene iz
-metode post v spremenljivke, ki jih bomo v nadaljevanju uporabili  . Na koncu še posodobimo nove vrednosti  vnosi preko 
-sql poizvedbe, kjer je vrednost id-ja vrednost izbranega id-ja iz seznama. 
+Najprej sem v bazi ajax ustvaril tabelo uporabniki s stolpcema id(ključ) in vnosi.  V nadaljevanju izberem iz baze vse podatke stolpca id v tabeli uporabniki in jih s pomočjo while zanke zapišem v padajoči seznam. V nadaljevanju želim pridobiti na podlagi izbranega id-ja iz seznama, vrednost iz stolpca vnosi. To naredim s funckijo onSelect, kjer pošljem GET zahtevo z URL-jem na datoteko nalozi_podatke.php. V datoteki nalozi_podatke.php preverim, če je nastavljen id (izbrani id iz seznama), ga shranim v spremenljivko v obliki niza in opravim SQL poizvedbo, kjer poiščem vrednost vnosi po izbranem id-ju in shranim vrednost v novo spremenljivko. V nadaljevanju pridobljeno vrednost niza dodam v HTML element input, kjer bom lahko v nadaljevanju vrednosti vnosa spreminjal.
+Nato spremembo vrednosti  vnosa v input HTML znački želim shraniti v bazo, kar naredim z jQuery event handler-jem click s funkcijo, kjer pridobim ustrezne vrednosti in naredim POST metodo preko Ajax klica. V Ajax klicu navedem kot URL datoteko posodobi.php, tip metode in podatke, ki jih bom pošiljal. V datoteki posodobi.php preverim, če je nastavljena vrednost id, ter v nadaljevanju shranimo vrednosti id in vnosi pridobljene iz metode post v spremenljivke, ki jih bom uporabil v nadaljevanju. Na koncu še posodobim nove vrednosti vnosi preko sql poizvedbe, kjer je vrednost id-ja vrednost izbranega id-ja iz seznama. 
+
+
 Če je Ajax klic uspešen, se stran posodobi. 
+
+
+
+
