@@ -22,7 +22,7 @@ include('db_connection.php');
         }
 
         input#save {
-            margin-top: 5px;
+            margin: 5px 0 50px 0;
         }
 
 
