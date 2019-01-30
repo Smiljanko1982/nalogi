@@ -1,4 +1,7 @@
-function onSelect(str) {
+// opravi se GET metoda, ki naredi klic v bazo, s tem pridobimo podatek(id) in ga  shranimo v padajoči seznam
+
+
+ function onSelect(str) {
     var a = new XMLHttpRequest();
     a.onreadystatechange = function () {
 
